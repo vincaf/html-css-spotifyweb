@@ -7,13 +7,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* SCREEN XS > 0-600 */
+
+/* Struttura web app */
+
 #wrapper{
     display: flex;
 }
 
 header{
     width: 50px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     overflow: hidden;
     background-color: #000;
 }
@@ -25,12 +29,77 @@ main{
 }
 
 footer{
-    height: 100px;
+    height: 90px;
     background-color: #282828;
     overflow: hidden;
 }
 
-/* SCREEN XS > 0-600 */
+/* Header */
+
+.header_container{
+    width: 50px;
+    height: calc(100vh - 90px);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .logobig{
+    display: none;
+}
+
+.menu .text{
+    display: none;
+}
+
+.playlist{
+    display: none;
+}
+
+.header_down .text{
+    display: none;
+}
+
+header .icon{
+    color: #707070;
+}
+
+.menu .home .icon{
+    color: #ebe8e8;
+}
+
+.logo .logosmall{
+    width: 20px;
+}
+
+.menu{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.install .icon{
+    font-size: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px 3px;
+}
+
+.install hr{
+    display: none;
+}
+
+.user .profile img{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #707070;
+    margin-top: 20px;
+}
 
 /* SCREEN S > 601-700 */
 
