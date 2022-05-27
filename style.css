@@ -7,7 +7,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* SCREEN XS > 0-600 */
+/* ***************************** 
+*********** SCREEN XS > 0-600 */
 
 /* Struttura web app */
 
@@ -18,6 +19,7 @@
 header{
     width: 50px;
     height: calc(100vh - 90px);
+    min-height: 220px;
     overflow: hidden;
     background-color: #000;
 }
@@ -30,6 +32,7 @@ main{
 
 footer{
     height: 90px;
+    min-height: 90px;
     background-color: #282828;
     overflow: hidden;
 }
@@ -39,6 +42,7 @@ footer{
 .header_container{
     width: 50px;
     height: calc(100vh - 90px);
+    min-height: 220px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -101,8 +105,177 @@ header .icon{
     margin-top: 20px;
 }
 
-/* SCREEN S > 601-700 */
+/* ***************************** 
+*********** SCREEN S > 601-700 */
 
-/* SCREEN MD > 701-1100 */
+@media all and (min-width: 601px) {
 
-/* SCREEN LARGE > 1100 */
+    header{
+        width: 250px;
+    }
+
+    /* Header */
+
+    .header_container{
+        width: 250px;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo .logobig{
+        display: inline-block;
+    }
+
+    .logo img.logobig{
+        width: 100px;
+    }
+
+    .logo .logosmall{
+        display: none;
+    }
+
+    .menu img{
+        width: 20px;
+    }
+
+    .menu .text{
+        display: inline-block;
+        color: #707070;
+        font-size: 12px;
+    }
+
+    .playlist{
+        display: flex;
+        flex-direction: column;
+        color: #707070;
+    }
+
+    .header_down .text{
+        display: inline-block;
+        color: #707070;
+        font-size: 12px;
+    }
+
+    .home .text{
+        color: #fff;
+    }
+
+    .home{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .library{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header .icon{
+        color: #707070;
+    }
+
+    .menu .home .icon{
+        color: #ebe8e8;
+    }
+
+    .logo .logobig{
+        width: 50px;
+    }
+    
+    .playlist h3{
+        color: #ebe8e8;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .playlist ul{
+        list-style: none;
+    }
+
+    .playlist .create{
+        font-size: 25px;
+        padding: 0 10px;
+        background-color: #707070;
+        color: #000;
+    }
+
+    .playlist li{
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .playlist .newplaylist{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .newplaylist span:last-child{
+        font-size: 12px;
+    } 
+
+    .header_down .install{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .install .icon{
+        font-size: 5px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding: 2px 3px;
+    }
+
+    .install .space{
+        display: inline-block;
+        width: 150px;
+        background-color: #707070;
+        height: 1px;
+    }
+
+    .install .text{
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .header_down .user{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .user .profile img{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #707070;
+        margin-top: 0px;
+    }
+
+    .user .text{
+        color: #ebe8e8;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+
+
+/* ***************************** 
+*********** SCREEN MD > 701-1100 */
+
+/* ***************************** 
+*********** SCREEN LARGE > 1100 */
