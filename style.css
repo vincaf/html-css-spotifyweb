@@ -72,10 +72,6 @@ header .icon{
     color: #707070;
 }
 
-.menu .home .icon{
-    color: #ebe8e8;
-}
-
 .logo .logosmall{
     width: 20px;
 }
@@ -246,7 +242,7 @@ main .upgrade{
 
 main .upgrade .button{
     padding: 10px 25px;
-    color: #ebe8e8;
+    color: #a8a8a8;
     font-size: 12px;
     border: 2px solid #ebe8e8;
     border-radius: 50px;
@@ -273,7 +269,6 @@ main .container_menu{
     cursor: pointer;
 }
 
-/* Da rivedere e fare più piccolo */
 .container_menu div:first-child{
     border-bottom: 1px solid #7db82a;
 }
@@ -301,6 +296,7 @@ main .container_music .box{
     justify-content: stretch;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .container_music .box img{
@@ -329,6 +325,86 @@ main .container_music .box{
     border-radius: 100%;
     object-fit: cover;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #282828;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #707070;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #282828;
+  }
+
+/* GESTIONE HOVER */
+
+.menu span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.playlist .create:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.playlist li:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.install .text:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.player_album .info li:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.upgrade .button:hover{
+    padding: 10px 30px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .container_menu div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.player_album .icons div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.timing .time_passed:hover{
+    background-color: #7db82a;
+    cursor: pointer;
+}
+
+.volume .volume_act:hover{
+    background-color: #7db82a;
+    cursor: pointer;
+}
+
+.controls .fa-circle-play:hover{
+    font-size: 32px;
+    cursor: pointer;
+}
+
 
 /* ***************************** 
 *********** SCREEN S > 601-700 */
@@ -381,10 +457,6 @@ main .container_music .box{
         font-size: 12px;
     }
 
-    .home .text{
-        color: #fff;
-    }
-
     .home{
         display: flex;
         align-items: center;
@@ -405,10 +477,6 @@ main .container_music .box{
 
     header .icon{
         color: #707070;
-    }
-
-    .menu .home .icon{
-        color: #ebe8e8;
     }
 
     .logo .logobig{
@@ -513,7 +581,6 @@ main .container_music .box{
 }
 
 
-
 /* ***************************** 
 *********** SCREEN MD > 701-1100 */
 
@@ -541,6 +608,7 @@ main .container_music .box{
 
 }
 
+
 /* ***************************** 
 *********** SCREEN LARGE > 1100 */
 
@@ -560,7 +628,7 @@ main .container_music .box{
     /* Upgrade */
 
     main .upgrade{
-        width: calc(100vw - 205px);
+        width: calc(100vw - 215px);
     } 
 
     /* Main content - box musica */
