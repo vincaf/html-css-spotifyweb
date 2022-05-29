@@ -237,7 +237,7 @@ footer .player_audio{
 /* Effettua l'upgrade */
 
 main .upgrade{
-    width: calc(100vw - 50px);
+    width: calc(100vw - 46px);
     height: 90px;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -265,7 +265,7 @@ main .container_menu{
     justify-content: center;
 }
 
-.container_menu div{
+.container_menu {
     font-weight: bold;
     font-size: 10px;
     color: #707070;
@@ -286,11 +286,11 @@ main .container_music{
     padding: 20px;
 }
 
-main h1{
+main .container_music h1{
     color: #fff;
     font-size: 18px;
-    margin-top: 30px;
-    margin-left: 20px;
+    width: 100%;
+    margin: 15px 0;
 }
 
 main .container_music .box{
@@ -311,15 +311,23 @@ main .container_music .box{
     font-size: 12px;
 }
 
-.container_music .box div{
+.container_music .text{
     color: #707070;
     font-size: 10px;
 }
 
+.container_music .for_you{
+    margin: 20px 0 15px 0;
+}
 
+.container_music .for_you h1{
+    margin: 0 0 5px 0;
+}
 
-
-
+.container_music .box .circle{
+    border-radius: 100%;
+    object-fit: cover;
+}
 
 /* ***************************** 
 *********** SCREEN S > 601-700 */
