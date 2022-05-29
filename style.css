@@ -269,6 +269,7 @@ main .container_menu{
     font-weight: bold;
     font-size: 10px;
     color: #707070;
+    padding: 0 20px;
     cursor: pointer;
 }
 
@@ -294,7 +295,7 @@ main .container_music h1{
 }
 
 main .container_music .box{
-    width: calc(90% / 2);
+    width: calc(95% / 2);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -500,7 +501,15 @@ main .container_music .box{
     .timing .time{
         width: 130px;
     }
-    
+
+    /* Main content */
+
+    /* Upgrade */
+
+    main .upgrade{
+        width: calc(100vw - 185px);
+    } 
+
 }
 
 
@@ -520,6 +529,16 @@ main .container_music .box{
         width: 50px;
     }
 
+    /* Main content - box musica */
+
+    main .container_music .box{
+        width: calc(90% / 4);
+    }
+
+    main .container_music .for_you{
+        width: 100%;
+    }
+
 }
 
 /* ***************************** 
@@ -537,4 +556,16 @@ main .container_music .box{
         width: 80px;
     }
 
+    
+    /* Upgrade */
+
+    main .upgrade{
+        width: calc(100vw - 205px);
+    } 
+
+    /* Main content - box musica */
+
+    main .container_music .box{
+        width: calc(90% / 6);
+    }
 }
