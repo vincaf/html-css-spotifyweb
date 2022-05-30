@@ -326,6 +326,27 @@ main .container_music .box{
     object-fit: cover;
 }
 
+.container_music .box .img_hover{
+    position: relative;
+}
+
+.container_music .box .img_hover .play_this{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    display: none;
+}
+
+.container_music .box .img_hover:hover .play_this{
+    display: inline-block;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
